@@ -10,6 +10,8 @@ h1 {
     font-weight: bold;
     line-height: 2;
     letter-spacing: 0.05em;
+    margin: 40px 0;
+    text-align: center;
 }
 
 h1 a {
@@ -21,6 +23,9 @@ h3 {
     font-size: 36px;
     padding-bottom: 20px;
     border-bottom: 1px solid #000;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: normal;
 }
 
 h3::before {
@@ -28,6 +33,9 @@ h3::before {
     background-color: #72C9F3;
     color: #fff;
     margin-bottom: 25px;
+    font-size: 14px;
+    padding: 8px 15px;
+
 }
 
 .inner {
@@ -37,7 +45,7 @@ h3::before {
 }
 
 .visual {
-    background-image: url(./images/bg_main.png);
+    background: url(./images/bg_main.png) no-repeat 50% 50%/cover;
     padding: 240px 0 80px 0;
 }
 
@@ -56,15 +64,28 @@ h3::before {
     font-size: 36px;
 }
 
-.discusion-contents article img {
+.discusion {
+    margin: 100px 0;
+}
+
+.discusion-contents article:nth-child(1) {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.discusion-post {
     position: relative;
 }
 
-.discusion-contents article img::after {
+.discusion-post::after {
     content: "公文式教育が提供する価値を、より高めていくための取り組みとは何か？";
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
     position: absolute;
     bottom: 20px;
+    left: 20px;
+    padding: 20px;
 }
 
 .discusion-contents article dl {
@@ -73,11 +94,18 @@ h3::before {
 
 .discusion-contents article dt {
     font-size: 12px;
-    width: 125px;
     text-align: center;
     padding: 6px 12px;
+    background-color: #F5F5F5;
+    margin-top: 20px;
 }
 
 .discusion-contents article dt+dt {
     margin-left: 10px;
+}
+
+
+footer {
+    background-color: #1E1E1E;
+    color: #fff;
 }
